@@ -185,8 +185,12 @@
                             <div class="g-0 row">
                                 <div class="col-sm-6 position-relative">
                                     <h2>Contact us</h2>
-                                    <form action="" class="gap-3 vstack" id="contact-form" method="post">
+                                    <form class="gap-3 vstack" data-netlify="true" id="contact-form" method="post" name="contact" netlify-honeypot="bot-field">
                                         <fieldset>
+                                            <div class="visually-hidden">
+                                                <label for="bot-field">Do not fill this out if you are human:</label>
+                                                <input id="bot-field" name="bot-field" type="text">
+                                            </div>
                                             <div class="gap-3 vstack">
                                                 <div>
                                                     <label class="form-label" for="name">Your name</label>
